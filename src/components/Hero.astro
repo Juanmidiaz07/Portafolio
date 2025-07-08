@@ -9,10 +9,7 @@
 			<!-- Imagen de perfil placeholder -->
 			<div class="hero-image">
 				<div class="image-placeholder">
-					<svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="#2563eb"/>
-						<path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="#2563eb"/>
-					</svg>
+					<img src="/pfp.jpg" alt="Juan Miguel Díaz Peláez" />
 				</div>
 			</div>
 			
@@ -49,8 +46,8 @@
 		/* Espaciado superior para compensar el header fijo */
 		padding-top: 120px;
 		padding-bottom: 80px;
-		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-		color: white;
+		background: linear-gradient(135deg, #181830 0%, #23234a 100%);
+		color: #e0e7ef;
 		text-align: center;
 	}
 
@@ -67,20 +64,49 @@
 		gap: 2rem;
 	}
 
+	@media (min-width: 900px) {
+		.hero-content {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 4rem;
+			text-align: left;
+		}
+		.hero-image {
+			margin-bottom: 0;
+		}
+	}
+
 	.hero-image {
-		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.image-placeholder {
-		width: 120px;
-		height: 120px;
+		width: 160px;
+		height: 160px;
 		background: rgba(255, 255, 255, 0.2);
 		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		backdrop-filter: blur(10px);
-		border: 3px solid rgba(255, 255, 255, 0.3);
+		border: 4px solid #fff;
+		box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+		transition: transform 0.3s;
+		overflow: hidden;
+	}
+
+	.image-placeholder:hover {
+		transform: scale(1.05);
+	}
+
+	.image-placeholder img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 50%;
 	}
 
 	.hero-text h1 {
@@ -91,7 +117,9 @@
 	}
 
 	.highlight {
-		color: #fbbf24;
+		color: #39ff14;
+		font-family: 'Poppins', 'Inter', sans-serif;
+		text-shadow: none;
 	}
 
 	.subtitle {
@@ -111,12 +139,9 @@
 	}
 
 	.tag {
-		background: rgba(255, 255, 255, 0.2);
-		padding: 0.5rem 1rem;
-		border-radius: 20px;
-		font-size: 0.9rem;
-		backdrop-filter: blur(5px);
-		border: 1px solid rgba(255, 255, 255, 0.3);
+		background: #23234a;
+		color: #39ff14;
+		text-shadow: none;
 	}
 
 	.cta-buttons {
@@ -136,24 +161,31 @@
 	}
 
 	.btn-primary {
-		background: #fbbf24;
-		color: #1f2937;
+		background: linear-gradient(90deg, #39ff14 0%, #00fff7 100%);
+		color: #181830;
+		box-shadow: 0 2px 12px rgba(57,255,20,0.10);
+		border: none;
 	}
 
 	.btn-primary:hover {
-		background: #f59e0b;
-		transform: translateY(-2px);
+		background: linear-gradient(90deg, #00fff7 0%, #39ff14 100%);
+		transform: translateY(-2px) scale(1.04);
 	}
 
 	.btn-secondary {
 		background: transparent;
-		color: white;
-		border: 2px solid white;
+		color: #39ff14;
+		border: 2px solid #39ff14;
+		box-shadow: none;
 	}
 
 	.btn-secondary:hover {
-		background: white;
-		color: #1f2937;
+		background: #39ff14;
+		color: #181830;
+	}
+
+	.hero-text h1, .subtitle, .interests, .cta-buttons {
+		font-family: 'Poppins', 'Inter', sans-serif;
 	}
 
 	/* Responsive design */

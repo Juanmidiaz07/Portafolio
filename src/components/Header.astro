@@ -32,9 +32,9 @@
 		right: 0;
 		z-index: 1000;
 		/* Fondo con transparencia y efecto blur */
-		background: rgba(255, 255, 255, 0.95);
+		background: rgba(10, 10, 35, 0.92);
 		backdrop-filter: blur(10px);
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(57, 255, 20, 0.08);
 		padding: 1rem 0;
 		/* Transición suave */
 		transition: all 0.3s ease;
@@ -52,14 +52,17 @@
 	.logo h1 {
 		font-size: 1.5rem;
 		font-weight: 700;
-		color: #2563eb;
+		color: #39ff14;
 		margin-bottom: 0.25rem;
+		font-family: 'Poppins', 'Inter', sans-serif;
+		text-shadow: 0 0 6px #39ff1433;
 	}
 
 	.logo span {
 		font-size: 0.85rem;
-		color: #6b7280;
+		color: #a3a3c2;
 		font-weight: 500;
+		font-family: 'Poppins', 'Inter', sans-serif;
 	}
 
 	.nav ul {
@@ -70,15 +73,17 @@
 
 	.nav a {
 		text-decoration: none;
-		color: #374151;
+		color: #e0e7ef;
 		font-weight: 500;
 		transition: color 0.3s ease;
 		position: relative;
+		font-family: 'Poppins', 'Inter', sans-serif;
 	}
 
 	/* Efecto hover para los links de navegación */
 	.nav a:hover {
-		color: #2563eb;
+		color: #39ff14;
+		text-shadow: 0 0 6px #39ff1499;
 	}
 
 	/* Línea decorativa que aparece al hacer hover */
@@ -89,8 +94,9 @@
 		left: 0;
 		width: 0;
 		height: 2px;
-		background: #2563eb;
+		background: linear-gradient(90deg, #39ff14 0%, #00fff7 100%);
 		transition: width 0.3s ease;
+		border-radius: 2px;
 	}
 
 	.nav a:hover::after {
