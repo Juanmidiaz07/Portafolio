@@ -1,0 +1,203 @@
+---
+// Componente About - Información detallada sobre Juan Miguel
+// Aquí se explica más sobre su personalidad y trasfondo
+---
+
+<section id="sobre-mi" class="about">
+	<div class="container">
+		<h2>🧑‍💻 Sobre mí</h2>
+		
+		<div class="about-content">
+			<div class="about-text">
+				<p class="intro">
+					Soy Juan Miguel Díaz Peláez, tengo 16 años y estoy comenzando mi camino en el mundo de la programación.
+					Soy una persona curiosa, disciplinada y con muchas ganas de aprender.
+				</p>
+				
+				<div class="personal-info">
+					<h3>⚽ Un poco más sobre mí:</h3>
+					<ul>
+						<li>
+							<strong>Fútbol:</strong> Juego fútbol con pasión. Es mi forma favorita de mantenerme activo y conectar con otros.
+						</li>
+						<li>
+							<strong>Fe:</strong> Soy parte de una comunidad de Dios donde aprendo a crecer como persona y desarrollar valores sólidos.
+						</li>
+						<li>
+							<strong>Entretenimiento:</strong> Me encanta jugar videojuegos, escuchar música y pasar tiempo descubriendo cosas nuevas.
+						</li>
+					</ul>
+				</div>
+				
+				<div class="programming-journey">
+					<h3>💻 Mi camino en programación</h3>
+					<p>
+						Estoy enfocándome en el desarrollo <strong>Frontend</strong>, aprendiendo a crear sitios y aplicaciones visuales e interactivas.
+						Luego, quiero seguir profundizando en el <strong>Backend</strong> para entender cómo funcionan por dentro las aplicaciones web.
+					</p>
+				</div>
+			</div>
+			
+			<!-- Tarjeta de estadísticas personales -->
+			<div class="stats-card">
+				<h3>Mi perfil</h3>
+				<div class="stat-item">
+					<span class="stat-number">16</span>
+					<span class="stat-label">Años</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-number">Frontend</span>
+					<span class="stat-label">Especialización</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-number">Junior</span>
+					<span class="stat-label">Nivel</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-number">∞</span>
+					<span class="stat-label">Ganas de aprender</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.about {
+		padding: 80px 0;
+		background: white;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.about h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #1f2937;
+		font-weight: 700;
+	}
+
+	.about-content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 3rem;
+		align-items: start;
+	}
+
+	.about-text {
+		font-size: 1.1rem;
+		line-height: 1.8;
+		color: #374151;
+	}
+
+	.intro {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		color: #1f2937;
+		font-weight: 500;
+	}
+
+	.personal-info,
+	.programming-journey {
+		margin-bottom: 2rem;
+	}
+
+	.personal-info h3,
+	.programming-journey h3 {
+		color: #2563eb;
+		margin-bottom: 1rem;
+		font-size: 1.3rem;
+	}
+
+	.personal-info ul {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.personal-info li {
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+		position: relative;
+	}
+
+	/* Bullet points personalizados */
+	.personal-info li::before {
+		content: '▶';
+		position: absolute;
+		left: 0;
+		color: #2563eb;
+		font-size: 0.8rem;
+	}
+
+	.stats-card {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		/* Efecto hover */
+		transition: transform 0.3s ease;
+	}
+
+	.stats-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.stats-card h3 {
+		margin-bottom: 1.5rem;
+		font-size: 1.3rem;
+		opacity: 0.9;
+	}
+
+	.stat-item {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1.5rem;
+		padding: 1rem;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 8px;
+		backdrop-filter: blur(5px);
+	}
+
+	.stat-number {
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: #fbbf24;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		font-size: 0.9rem;
+		opacity: 0.8;
+	}
+
+	/* Responsive design */
+	@media (max-width: 768px) {
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		
+		.about h2 {
+			font-size: 2rem;
+		}
+		
+		.about-text {
+			font-size: 1rem;
+		}
+		
+		.intro {
+			font-size: 1.1rem;
+		}
+		
+		.stats-card {
+			margin-top: 2rem;
+		}
+	}
+</style>

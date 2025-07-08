@@ -1,0 +1,308 @@
+---
+// Componente Projects - Muestra proyectos actuales y futuros
+// Separado en proyectos completados y en planeación
+---
+
+<section id="proyectos" class="projects">
+	<div class="container">
+		<h2>🚀 Mis proyectos</h2>
+		
+		<!-- Proyectos completados -->
+		<div class="projects-section">
+			<h3>✅ Proyectos realizados</h3>
+			<div class="projects-grid">
+				<div class="project-card completed">
+					<div class="project-image">
+						<div class="project-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="#2563eb" stroke-width="2" fill="none"/>
+								<path d="M12 22V12" stroke="#2563eb" stroke-width="2"/>
+								<path d="M3 7L12 12L21 7" stroke="#2563eb" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="project-content">
+						<h4>Mi primer portafolio</h4>
+						<p>Este sitio web que estás viendo ahora. Creado con Astro, incluye secciones sobre mí, mis tecnologías y proyectos.</p>
+						<div class="project-tech">
+							<span class="tech-tag">Astro</span>
+							<span class="tech-tag">HTML</span>
+							<span class="tech-tag">CSS</span>
+						</div>
+						<div class="project-status completed">
+							<span>Completado</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="project-card completed">
+					<div class="project-image">
+						<div class="project-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" stroke="#2563eb" stroke-width="2" fill="none"/>
+								<path d="M14 2V8H20" stroke="#2563eb" stroke-width="2" fill="none"/>
+								<path d="M16 13H8" stroke="#2563eb" stroke-width="2"/>
+								<path d="M16 17H8" stroke="#2563eb" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="project-content">
+						<h4>Mini landing page</h4>
+						<p>Práctica de estructura y estilos básicos con HTML y CSS. Enfoque en diseño responsivo y buenas prácticas.</p>
+						<div class="project-tech">
+							<span class="tech-tag">HTML</span>
+							<span class="tech-tag">CSS</span>
+						</div>
+						<div class="project-status completed">
+							<span>Completado</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Proyectos en planeación -->
+		<div class="projects-section">
+			<h3>🛠️ Proyectos en planeación</h3>
+			<div class="projects-grid">
+				<div class="project-card planned">
+					<div class="project-image">
+						<div class="project-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 12L11 14L15 10" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#f59e0b" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="project-content">
+						<h4>To-Do App con JavaScript</h4>
+						<p>Aplicación de tareas para aprender lógica de programación y manipulación del DOM. Incluirá funciones básicas CRUD.</p>
+						<div class="project-tech">
+							<span class="tech-tag">JavaScript</span>
+							<span class="tech-tag">DOM</span>
+							<span class="tech-tag">Local Storage</span>
+						</div>
+						<div class="project-status planned">
+							<span>En planeación</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="project-card planned">
+					<div class="project-image">
+						<div class="project-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="11" cy="11" r="8" stroke="#f59e0b" stroke-width="2" fill="none"/>
+								<path d="M21 21L16.65 16.65" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+					</div>
+					<div class="project-content">
+						<h4>Clon de Google</h4>
+						<p>Recreación de la página principal de Google para mejorar diseño responsivo y técnicas de CSS avanzadas.</p>
+						<div class="project-tech">
+							<span class="tech-tag">HTML</span>
+							<span class="tech-tag">CSS</span>
+							<span class="tech-tag">Responsive Design</span>
+						</div>
+						<div class="project-status planned">
+							<span>En planeación</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="project-card planned">
+					<div class="project-image">
+						<div class="project-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z" stroke="#f59e0b" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="project-content">
+						<h4>Biblia interactiva</h4>
+						<p>Una web con herramientas y recursos cristianos. Proyecto personal que combina mi fe con la programación.</p>
+						<div class="project-tech">
+							<span class="tech-tag">JavaScript</span>
+							<span class="tech-tag">API</span>
+							<span class="tech-tag">Base de datos</span>
+						</div>
+						<div class="project-status planned">
+							<span>En planeación</span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="project-card planned">
+					<div class="project-image">
+						<div class="project-icon">
+							<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V13" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M18.5 2.5C18.8978 2.10218 19.4374 1.87868 20 1.87868C20.5626 1.87868 21.1022 2.10218 21.5 2.5C21.8978 2.89782 22.1213 3.43739 22.1213 4C22.1213 4.56261 21.8978 5.10218 21.5 5.5L12 15L8 16L9 12L18.5 2.5Z" stroke="#f59e0b" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="project-content">
+						<h4>Blog personal</h4>
+						<p>Blog sobre videojuegos y música. Espacio para compartir mis experiencias y conectar con otros apasionados.</p>
+						<div class="project-tech">
+							<span class="tech-tag">Astro</span>
+							<span class="tech-tag">Markdown</span>
+							<span class="tech-tag">CMS</span>
+						</div>
+						<div class="project-status planned">
+							<span>En planeación</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.projects {
+		padding: 80px 0;
+		background: white;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.projects h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #1f2937;
+		font-weight: 700;
+	}
+
+	.projects-section {
+		margin-bottom: 4rem;
+	}
+
+	.projects-section h3 {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+		color: #2563eb;
+		font-weight: 600;
+	}
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 2rem;
+	}
+
+	.project-card {
+		background: white;
+		border-radius: 16px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		transition: all 0.3s ease;
+		border: 2px solid transparent;
+	}
+
+	.project-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+	}
+
+	.project-card.completed {
+		border-color: #10b981;
+	}
+
+	.project-card.planned {
+		border-color: #f59e0b;
+	}
+
+	.project-image {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		height: 120px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.project-icon {
+		background: rgba(255, 255, 255, 0.2);
+		padding: 1rem;
+		border-radius: 50%;
+		backdrop-filter: blur(10px);
+	}
+
+	.project-content {
+		padding: 2rem;
+	}
+
+	.project-content h4 {
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+		color: #1f2937;
+		font-weight: 600;
+	}
+
+	.project-content p {
+		color: #6b7280;
+		line-height: 1.6;
+		margin-bottom: 1.5rem;
+	}
+
+	.project-tech {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.tech-tag {
+		background: #f3f4f6;
+		color: #374151;
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+
+	.project-status {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.9rem;
+		font-weight: 600;
+	}
+
+	.project-status.completed {
+		background: #d1fae5;
+		color: #065f46;
+	}
+
+	.project-status.planned {
+		background: #fef3c7;
+		color: #92400e;
+	}
+
+	/* Responsive design */
+	@media (max-width: 768px) {
+		.projects-grid {
+			grid-template-columns: 1fr;
+		}
+		
+		.projects h2 {
+			font-size: 2rem;
+		}
+		
+		.projects-section h3 {
+			font-size: 1.5rem;
+		}
+		
+		.project-content {
+			padding: 1.5rem;
+		}
+	}
+</style>

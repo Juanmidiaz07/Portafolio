@@ -1,0 +1,192 @@
+---
+// Componente Hero - Sección principal de bienvenida
+// Esta es la primera sección que verán los visitantes
+---
+
+<section class="hero">
+	<div class="container">
+		<div class="hero-content">
+			<!-- Imagen de perfil placeholder -->
+			<div class="hero-image">
+				<div class="image-placeholder">
+					<svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="#2563eb"/>
+						<path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="#2563eb"/>
+					</svg>
+				</div>
+			</div>
+			
+			<!-- Contenido principal del hero -->
+			<div class="hero-text">
+				<h1>
+					¡Hola! Soy <span class="highlight">Juan Miguel Díaz Peláez</span>
+				</h1>
+				<p class="subtitle">
+					Tengo 16 años y estoy comenzando mi camino en el mundo de la programación.
+					Soy una persona curiosa, disciplinada y con muchas ganas de aprender.
+				</p>
+				
+				<!-- Tags de intereses personales -->
+				<div class="interests">
+					<span class="tag">⚽ Fútbol</span>
+					<span class="tag">🎮 Gaming</span>
+					<span class="tag">🎵 Música</span>
+					<span class="tag">✝️ Fe</span>
+				</div>
+				
+				<!-- Llamada a la acción -->
+				<div class="cta-buttons">
+					<a href="#proyectos" class="btn btn-primary">Ver mis proyectos</a>
+					<a href="#contacto" class="btn btn-secondary">Contactar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.hero {
+		/* Espaciado superior para compensar el header fijo */
+		padding-top: 120px;
+		padding-bottom: 80px;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.hero-image {
+		margin-bottom: 1rem;
+	}
+
+	.image-placeholder {
+		width: 120px;
+		height: 120px;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		backdrop-filter: blur(10px);
+		border: 3px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.hero-text h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+		line-height: 1.2;
+	}
+
+	.highlight {
+		color: #fbbf24;
+	}
+
+	.subtitle {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		max-width: 600px;
+		opacity: 0.9;
+		line-height: 1.6;
+	}
+
+	.interests {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 2rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.tag {
+		background: rgba(255, 255, 255, 0.2);
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		font-size: 0.9rem;
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.btn {
+		padding: 0.8rem 2rem;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.btn-primary {
+		background: #fbbf24;
+		color: #1f2937;
+	}
+
+	.btn-primary:hover {
+		background: #f59e0b;
+		transform: translateY(-2px);
+	}
+
+	.btn-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+
+	.btn-secondary:hover {
+		background: white;
+		color: #1f2937;
+	}
+
+	/* Responsive design */
+	@media (max-width: 768px) {
+		.hero {
+			padding-top: 100px;
+			padding-bottom: 60px;
+		}
+		
+		.hero-text h1 {
+			font-size: 2.2rem;
+		}
+		
+		.subtitle {
+			font-size: 1.1rem;
+		}
+		
+		.interests {
+			gap: 0.5rem;
+		}
+		
+		.tag {
+			font-size: 0.8rem;
+		}
+		
+		.cta-buttons {
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.btn {
+			width: 200px;
+			text-align: center;
+		}
+	}
+</style>

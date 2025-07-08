@@ -1,0 +1,274 @@
+---
+// Componente Contact - Información de contacto y redes sociales
+// Formulario de contacto básico y links a redes
+---
+
+<section id="contacto" class="contact">
+	<div class="container">
+		<h2>📞 Contacto</h2>
+		
+		<div class="contact-content">
+			<div class="contact-info">
+				<h3>¡Hablemos!</h3>
+				<p>
+					Estoy siempre abierto a nuevas oportunidades, colaboraciones o simplemente charlar sobre programación.
+					Si tienes algún proyecto en mente o quieres conectar, no dudes en escribirme.
+				</p>
+				
+				<div class="contact-methods">
+					<div class="contact-method">
+						<div class="method-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#2563eb" stroke-width="2" fill="none"/>
+								<path d="M22 6L12 13L2 6" stroke="#2563eb" stroke-width="2"/>
+							</svg>
+						</div>
+						<div class="method-info">
+							<h4>Email</h4>
+							<p>juan.miguel.dev@gmail.com</p>
+						</div>
+					</div>
+					
+					<div class="contact-method">
+						<div class="method-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 19C9 19.5304 9.21071 20.0391 9.58579 20.4142C9.96086 20.7893 10.4696 21 11 21H13C13.5304 21 14.0391 20.7893 14.4142 20.4142C14.7893 20.0391 15 19.5304 15 19C15 18.4696 14.7893 17.9609 14.4142 17.5858C14.0391 17.2107 13.5304 17 13 17H11C10.4696 17 9.96086 17.2107 9.58579 17.5858C9.21071 17.9609 9 18.4696 9 19Z" stroke="#2563eb" stroke-width="2"/>
+								<path d="M12 1C15.5 1 18 3.5 18 6C18 10 12 16 12 16S6 10 6 6C6 3.5 8.5 1 12 1Z" stroke="#2563eb" stroke-width="2"/>
+							</svg>
+						</div>
+						<div class="method-info">
+							<h4>Ubicación</h4>
+							<p>Colombia</p>
+						</div>
+					</div>
+					
+					<div class="contact-method">
+						<div class="method-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 11C9 12.66 10.34 14 12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11Z" stroke="#2563eb" stroke-width="2"/>
+								<path d="M12 1V7" stroke="#2563eb" stroke-width="2"/>
+								<path d="M21 12C21 13.1 20.1 14 19 14H5C3.9 14 3 13.1 3 12C3 10.9 3.9 10 5 10H19C20.1 10 21 10.9 21 12Z" stroke="#2563eb" stroke-width="2"/>
+							</svg>
+						</div>
+						<div class="method-info">
+							<h4>Estado</h4>
+							<p>Disponible para proyectos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Formulario de contacto básico -->
+			<div class="contact-form">
+				<form>
+					<h3>Envíame un mensaje</h3>
+					<div class="form-group">
+						<label for="name">Nombre</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="subject">Asunto</label>
+						<input type="text" id="subject" name="subject" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="message">Mensaje</label>
+						<textarea id="message" name="message" rows="5" required></textarea>
+					</div>
+					
+					<button type="submit" class="submit-btn">
+						Enviar mensaje
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.contact {
+		padding: 80px 0;
+		background: #f8fafc;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	.contact h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #1f2937;
+		font-weight: 700;
+	}
+
+	.contact-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: start;
+	}
+
+	.contact-info h3 {
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+		color: #2563eb;
+		font-weight: 600;
+	}
+
+	.contact-info p {
+		color: #6b7280;
+		line-height: 1.6;
+		margin-bottom: 2rem;
+		font-size: 1.1rem;
+	}
+
+	.contact-methods {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.contact-method {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem;
+		background: white;
+		border-radius: 12px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+		transition: all 0.3s ease;
+	}
+
+	.contact-method:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+	}
+
+	.method-icon {
+		background: #eff6ff;
+		padding: 0.75rem;
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.method-info h4 {
+		color: #1f2937;
+		margin-bottom: 0.25rem;
+		font-weight: 600;
+	}
+
+	.method-info p {
+		color: #6b7280;
+		margin: 0;
+		font-size: 0.9rem;
+	}
+
+	.contact-form {
+		background: white;
+		padding: 2rem;
+		border-radius: 16px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+
+	.contact-form h3 {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		color: #1f2937;
+		font-weight: 600;
+	}
+
+	.form-group {
+		margin-bottom: 1.5rem;
+	}
+
+	.form-group label {
+		display: block;
+		margin-bottom: 0.5rem;
+		color: #374151;
+		font-weight: 500;
+	}
+
+	.form-group input,
+	.form-group textarea {
+		width: 100%;
+		padding: 0.8rem;
+		border: 2px solid #e5e7eb;
+		border-radius: 8px;
+		font-size: 1rem;
+		transition: border-color 0.3s ease;
+		font-family: inherit;
+	}
+
+	.form-group input:focus,
+	.form-group textarea:focus {
+		outline: none;
+		border-color: #2563eb;
+	}
+
+	.form-group textarea {
+		resize: vertical;
+		min-height: 120px;
+	}
+
+	.submit-btn {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		padding: 1rem 2rem;
+		border: none;
+		border-radius: 8px;
+		font-size: 1rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.submit-btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+	}
+
+	.submit-btn:active {
+		transform: translateY(0);
+	}
+
+	/* Responsive design */
+	@media (max-width: 768px) {
+		.contact-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		
+		.contact h2 {
+			font-size: 2rem;
+		}
+		
+		.contact-form {
+			padding: 1.5rem;
+		}
+		
+		.contact-methods {
+			gap: 1rem;
+		}
+	}
+</style>

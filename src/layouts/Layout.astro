@@ -1,0 +1,65 @@
+---
+// Layout principal del sitio web
+// Este archivo define la estructura HTML básica que se usará en todas las páginas
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<!-- Configuración básica del documento -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		
+		<!-- Título dinámico que se puede cambiar desde cada página -->
+		<title>{title}</title>
+		
+		<!-- Meta tags para SEO (optimización para motores de búsqueda) -->
+		<meta name="description" content="Portafolio de Juan Miguel Díaz Peláez - Programador Junior especializado en Frontend" />
+		<meta name="keywords" content="programador, frontend, JavaScript, HTML, CSS, React, Juan Miguel Díaz Peláez" />
+		
+		<!-- Fuentes de Google Fonts para tipografía moderna -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Aquí se insertará el contenido de cada página -->
+		<slot />
+	</body>
+</html>
+
+<style>
+	/* Reset básico y configuración global */
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		/* Scroll suave para navegación interna */
+		scroll-behavior: smooth;
+	}
+
+	body {
+		/* Fuente principal del sitio */
+		font-family: 'Inter', sans-serif;
+		line-height: 1.6;
+		color: #333;
+		background: #fafafa;
+		/* Evita el scroll horizontal */
+		overflow-x: hidden;
+	}
+
+	/* Estilo para código inline */
+	code {
+		font-family: 'Fira Code', monospace;
+		background: #f1f3f4;
+		padding: 2px 6px;
+		border-radius: 4px;
+		font-size: 0.9em;
+	}
+</style>
